@@ -4,12 +4,8 @@ body {
     width: 100%;
     height: 100%;
     text-align: center;
-    background-color: rgba(184, 252, 252, 0.979);
-    background-image: url(1.jpeg);
-    background-repeat: no-repeat;
-    backface-visibility: .3;
-    background-size: cover;
-    opacity: .85;
+    background-color: #b8fcdcfa;
+
 }
 
 .main {
@@ -25,11 +21,6 @@ body {
 
 h3 {
     display: inline-block !important;
-}
-
-button:hover {
-    background-color: yellow;
-    color: red;
 }
 
 #div2 {

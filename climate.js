@@ -31,16 +31,11 @@ $(document).ready(function() {
 });
 
 function outputData(data) {
-    return "<div> <h4> Weather in " + data.name + "</h4> " +
-        "<img src='http://openweathermap.org/img/w/" + data.weather[0].icon + ".png' width=150px> " +
-        "<h4> Weather : " + data.weather[0].main + "<br> " +
-        "Description:" + data.weather[0].description + " <br> " +
+    return "<div> <h4> Weather in " + data.name + "</h4> " +  
         "Temperature : " + data.main.temp + " F <br>" +
         "High Temp : " + data.main.temp_max + " F <br>" +
-        "Low Temp : " + data.main.temp_min + " F <br>" +
-        "Pressure : " + data.main.pressure + " hPa <br>" +
-        "Humidity : " + data.main.humidity + " % <br>" +
-        "Visibility : " + data.visibility + " meters <br>" +
-        "Wind Speed : " + data.wind.speed + " m/sec <br>" +
-        "Wind Direction : " + data.wind.deg + " degrees </h4> </div>"
+        "Low Temp : " + data.main.temp_min + " F <br>" 
+        
+      
+        
 }
