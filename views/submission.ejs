@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/public/style.css">
+    <title>Survey</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <br><br>
+        <div class="row">
+            <div class="col">
+                <h1>Welcome to the Quote's World </h1> <br><br>
+
+
+                <h3> Here are some favourite Quotes for everyone..</h3>
+                <br><br>
+                <div class="quote" style="margin-left:145px">
+                    <% for (var user of users) { %>
+                        <p style="font-size: 20px; font-weight:bold">"
+                            <%= user.Quote %> "</p>
+                        <p style="font-size: 20px; font-weight:bold; color:blue; margin-left:225px">-
+                            <%=  user.Firstname  %>
+                                <%=  user.Lastname  %> at
+                                    <%= new Date().toDateString() %>
+                        </p>
+                        <br>
+                        <%}%>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

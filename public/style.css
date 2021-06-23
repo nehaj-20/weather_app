@@ -1,0 +1,52 @@
+.form {
+    width: 700px;
+    height: 750px;
+    margin: 50px;
+    margin-left: 430px;
+    padding: 50px;
+    border: 3px solid black;
+    background-image: url("../public/img/background.jpeg");
+    transition: transform 1s;
+    border-radius: 10%;
+    opacity: .9;
+}
+
+.form:hover {
+    transform: scale(1.10);
+    opacity: 1;
+}
+
+#first {
+    text-align: center;
+    font-size: larger;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-weight: bolder;
+}
+
+body {
+    content: "";
+    background: url("../public/img/dot.jpeg");
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
+.container {
+    width: auto;
+    height: auto;
+    margin: 100px;
+    padding: 50px;
+    border: 3px solid black;
+    background: pink;
+    transition: transform 1s;
+    border-radius: 10px;
+    opacity: .7;
+}
+
+.container:hover {
+    transform: scale(1.10);
+    opacity: .9;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/public/style.css">
+    <title>Survey</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-dark text-white ">
+        <div class="container-fluid ">
+            <a class="navbar-brand ">WJU</a>
+            <a class="navbar-brand ">Thought Of The Day</a>
+
+            <% if(messages.registration) { %>
+                <% for (var x of messages.registration) { %>
+                    <p style="color:red">
+                        <%= x %>
+                    </p>
+                    <% } %>
+                        <% } %>
+                            <form class="d-flex input-group w-auto ">
+                                <input type="search " class="form-control rounded " placeholder="Search " aria-label="Search " aria-describedby="search-addon " />
+                            </form>
+        </div>
+    </nav>
+
+    <div class="form " style="border: 2px solid black;">
+
+        <form method="POST" action="/process">
+            <!-- 2 column grid layout with text inputs for the first and last names -->
+
+            <div id="first">
+
+                <h1 style="margin-top: 50px;color:red;"> <b>Welcome to Quoting World</b></h1>
+                <h2 style="margin-top: 50px;color: rgb(241, 78, 78);">SJ Campus: Express yourself </h2>
+
+            </div>
+
+            <div class="row mb-4">
+                <div class="col">
+                    <div class="form-outline">
+                        <input type="text" name="Firstname" id="form6Example1" class="form-control" placeholder="First Name" />
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-outline">
+                        <input type="text" name="Lastname" id="form6Example2" class="form-control" placeholder="Last Name" />
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="form-outline mb-4">
+                <textarea class="form-control" name="Quote" id="form6Example7" rows="4" placeholder="Your Thought of the Day"></textarea>
+
+            </div>
+
+            <div class="row mb-4">
+                <div class="col">
+                    <div class="form-outline">
+                        <button type="submit" class="btn btn-success btn-block mb-4 btn-lg">Add my Quote</button>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-outline">
+                        <button type="reset" class="btn btn-danger btn-block btn-lg mb-4">Reset The Quote</button>
+
+                    </div>
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+
+    <footer class="bg-dark text-center text-white " style="margin-top: 50px; ">
+
+        <div class="text-center p-3 " style="background-color: rgba(0, 0, 0, 0.2); ">
+            © 2021 Copyright:
+            <a class="text-white " href="https://wjusurvey.com/ ">wjusurvey.com</a>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
